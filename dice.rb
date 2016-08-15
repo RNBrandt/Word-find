@@ -1,5 +1,5 @@
 
-class Die
+class Dice
   attr_reader :sides
   OFFICIAL_DICE_LETTER_COMBINATIONS = [
     'AAEEGN',
@@ -20,14 +20,14 @@ class Die
     'DEILRX'
   ]
 
-  def initialize(letters=[])
+  def initialize(letters)
     @sides = letters
   end
 
-  def self.official_boggle_dice
+  def official_boggle_dice
     dice = []
     OFFICIAL_DICE_LETTER_COMBINATIONS.each do |die|
-      dice << Die.new(die)
+      dice << Dice.new(die)
     end
     dice
   end
