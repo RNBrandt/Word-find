@@ -24,7 +24,7 @@ class Dice
     @sides = letters
   end
 
-  def official_boggle_dice
+  def self.official_boggle_dice
     dice = []
     OFFICIAL_DICE_LETTER_COMBINATIONS.each do |die|
       dice << Dice.new(die)
