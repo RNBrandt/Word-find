@@ -1,6 +1,5 @@
 
 class Board
-  # attr_reader :dice
   attr_reader :board
   def initialize(dice)
     @dice = dice
