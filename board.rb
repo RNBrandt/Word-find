@@ -6,7 +6,7 @@ class Board
     @board = Array.new(4) {Array.new(4)}
   end
 
-  def rumble
+  def shake
     @dice.shuffle!
     index = -1
     @board.map! do |row|
